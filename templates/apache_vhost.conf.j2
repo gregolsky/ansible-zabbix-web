@@ -87,7 +87,7 @@ SSLCryptoDevice {{ zabbix_apache_SSLCryptoDevice }}
   SSLCipherSuite {{ apache_ssl_cipher_suite }}
   SSLProtocol {{ apache_ssl_protocol }}
   SSLHonorCipherOrder On
-{% if apache_vhosts_version == "2.4" %}
+{% if apache_vhosts_version == '2.4' %}
   SSLCompression off
 {% endif %}
   SSLCertificateFile {{ zabbix_apache_tls_crt }}
